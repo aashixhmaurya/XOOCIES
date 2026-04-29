@@ -46,3 +46,5 @@ Once installed, you need to link your Hackatime account to see your progress:
 * **Endpoint:** `https://hackatime.hackclub.com/api/hackatime/v1/users/current/statusbar/today`
 * **Sync Interval:** 1 minute.
 * **Stack:** JavaScript / VS Code Extension API.
+### 🎥 How it looks
+<img width="1477" height="244" alt="Screenshot 2026-04-29 224942" src="https://github.com/user-attachments/assets/f0c75984-fcd4-49dd-a798-192f23fe8a2c" />
