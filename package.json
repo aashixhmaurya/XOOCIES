@@ -1,7 +1,13 @@
 {
     "name": "xoocies",
+    "publisher": "XOOCIES",
     "displayName": "xoocies",
     "description": "Track your Hack Club cookies in real-time via Hackatime API",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/aashixhmaurya/XOOCIES"
+    },
+    "icon": "icon.jpeg",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.75.0"
