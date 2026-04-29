@@ -1,0 +1,29 @@
+{
+    "name": "xoocies",
+    "displayName": "xoocies",
+    "description": "Track your Hack Club cookies in real-time via Hackatime API",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.75.0"
+    },
+    "activationEvents": [
+        "onStartupFinished"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "configuration": {
+            "title": "xoocies Settings",
+            "properties": {
+                "xoocies.apiKey": {
+                    "type": "string",
+                    "default": "",
+                    "description": "Enter your Hackatime API Key to sync your cookies."
+                }
+            }
+        },
+        "commands": [{
+            "command": "xoocies.reset",
+            "title": "xoocies: Reset All Cookies"
+        }]
+    }
+}
