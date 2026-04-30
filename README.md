@@ -1,44 +1,31 @@
-# xoocies 🍪
+xoocies 🍪
+Track your Hack Club cookies directly in the VS Code status bar. No more switching tabs to the dashboard just to check your count.
 
-**xoocies** is a minimalist VS Code extension built for Hack Clubbers who are tired of dashboard-hopping. It tracks your coding progress in real-time and shows your Cookie count directly in the status bar. Keep your head in the code and your eyes on the prize.
+Features
+Status bar item: See your cookie count at a glance while you code.
 
-## Why xoocies?
-Checking the dashboard mid-grind is a total vibe killer. I built this so you can see your rewards right where you work. Whether you're chasing your next milestone or just vibing with a project, xoocies keeps you updated on your cookies without the drama.
+Automatic Updates: Refreshes periodically to keep your stats current.
 
-## Features
-* **Real-time Sync:** Hits the Hackatime API every 60 seconds to stay updated.
-* **Status Bar Integration:** A clean 🍪 icon that stays lowkey in your editor.
-* **Pure Accuracy:** Uses official server data so your count always matches the dashboard.
-* **Privacy-First:** No hardcoding here. Your API key stays safe in your local settings.
+Minimalist: Lightweight and stays out of your way.
 
-## The Cookie Math 🧮
-The extension follows the official Hack Club rule: **10 cookies for every 1 hour of coding.**
+Usage
+Install the extension from the Marketplace.
 
-The formula used is:  
-**Cookies = (Total Seconds / 3600) * 10 (and then we round it down)**
+Get your API Key from your Hackatime settings: https://hackatime.hackclub.com/my/settings/access
 
-### What does "round it down" mean?
-In technical terms, we use a `floor` function. In simple words: **We only count full, completed cookies.** If your math says you have 5.9 cookies, you’ll see **5 Cookies** on your screen. You gotta finish those last few minutes of coding to bake that 6th cookie! Basically, 1 cookie drops every 6 minutes of active work.
+Open VS Code Settings (Ctrl+,) and search for "xoocies".
 
-## Installation (The Easy Way)
-* Download the latest `xoocies-x.x.x.vsix` from the [Releases](https://github.com/aashixhmaurya/XOOCIES/releases) page.
-* Open VS Code and jump into the **Extensions** view (`Ctrl+Shift+X`).
-* Click the **three dots (...)** at the top right and hit **Install from VSIX...**
-* Select the file you just downloaded and you're in.
+Paste your API Key into the field.
 
-## Setup
-Once you've installed it, you just need to link your account:
+Once saved, you’ll see your cookie count 🍪 show up in the status bar immediately.
 
-* Grab your **API Key** from your Hackatime Settings: [hackatime.hackclub.com/my/settings/access](https://hackatime.hackclub.com/my/settings/access)
-* Open VS Code **Settings** (`Ctrl+,`).
-* Search for **"xoocies"**.
-* Paste your API Key into the **Xoocies: Api Key** box.
-* Boom! Your 🍪 count will pop up in the status bar instantly.
+API Used
+This extension fetches data from the Hackatime API:
+GET https://hackatime.hackclub.com/api/v1/users/{user}/cookies
 
-## Technical Details
-* **Source:** Hackatime Status-bar API
-* **Endpoint:** `https://hackatime.hackclub.com/api/hackatime/v1/users/current/statusbar/today`
-* **Sync Interval:** 1 minute
-* **Stack:** JavaScript / VS Code Extension API
+Notes
+API Key Required: You must provide your personal API key for the extension to work.
+
+Status Bar: If it doesn't show up immediately, try reloading VS Code once after adding the key.
 ### 🎥 How it looks
 <img width="1477" height="244" alt="Screenshot 2026-04-29 224942" src="https://github.com/user-attachments/assets/f0c75984-fcd4-49dd-a798-192f23fe8a2c" />
